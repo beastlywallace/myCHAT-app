@@ -2,9 +2,9 @@ import React from 'react'
 
 export const Navbar = () => {
   return (
-      <div className='nav'>
-          <h3>Lama chat</h3>
-         <div className="nav-sub"><img src="222.jpeg" />
+      <div className='navbar'>
+          <span className="logo">Lama chat</span>
+         <div  className="user"><img src="222.jpeg" />
               <p>name</p>
               <button>logout
               </button>

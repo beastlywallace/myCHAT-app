@@ -78,7 +78,8 @@
   background-color:rgb(175, 175, 175)
 }
 .chat{
-  flex: 2
+  flex: 2;
+  position: relative
 }
 
 
@@ -114,14 +115,166 @@ button{
 
 /* search */
 .search{
-
+border-bottom:1px solid grey
 }
 .searchForm{
 
 }
-.input{
-
+.searchForm>input{
+background-color: transparent;
+border:none;
+color: white;
+}
+::placeholder{
+  color:lightseagreen
 }
 .userChat{
+padding:4px;
+display: flex;
+gap:5px;
+align-items: center;
+color: red;
+cursor:pointer;
+}
+.userChat:hover{
+  background-color: white;
+}
+.userChat>img{
+  height: 50px;
+  width: 50px;
+  object-fit: cover ;
+  border-radius: 50px;
+
+}
+
+
+/* chats */
+.chatinfo{
+   height: 50px;
+        background-color: #5d5b8d;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        color: lightgray;
+}
+.userChatInfo>p{
+
+}
+.userChatInfo>span{
+
+}
+.icon3{
+  height: 24px;
+  cursor:pointer;
+ 
+}
+.chatIcon{
+  gap: 10px;
+  display:flex
   
+}
+.messages{
+background-color: rgb(154, 149, 149);
+padding: 10px;
+height: calc(100% - 160px);
+  overflow: scroll;
+      
+}
+
+/* input */
+.input{
+  height:50px;
+  padding:10px;
+  background-color: white;
+  /* position:absolute; */
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.input8{
+  width:100%;
+  outline:none;
+  color: #2f2d52;
+  font-size:18px;
+}
+::placeholder{
+  color: lightgrey;
+}
+
+.send{
+  display:flex;
+  align-items: center;
+  gap:10px; 
+}
+.send> img{
+height:24px;
+cursor: pointer;
+background-color: white;
+}
+.send-img{
+  height:24px;
+cursor: pointer;
+background-color: white;
+}
+.send>button{
+border: none;
+padding:10px 15px;
+color:#2f2d52;
+background-color:plum ;
+cursor:pointer
+}
+
+/* message */
+.message{
+display:flex;
+gap:20px
+}
+
+/* pushing the owner of the chat to the right hand side */
+.owner{
+  flex-direction: row-reverse;
+}
+.messageInfo{
+display: flex;
+flex-direction: column;
+color: gray;
+font-weight: 300;
+margin-bottom: 20px;
+}
+
+.messageInfo>img{
+width:40px;
+height:40px;
+border-radius: 50%;
+object-fit: cover;
+
+
+}
+.messageContent{
+  max-width:80%;
+  display: flex;
+flex-direction: column;
+gap:10px;
+}
+
+.messageContent>
+.messageContent>p{
+  background-color: white;
+  border-radius: 0px 10px 10px 10px;
+  padding: 10px, 20px;
+  /* //this will increase with the length of the text  */
+  max-width: max-content; 
+}
+.messageContent>img{
+
+}
+
+
+.owner >p{
+  background-color: rgb(97, 181, 229);
+  color:white;
+  border-radius:10px 0px 10px 10px; 
 }
